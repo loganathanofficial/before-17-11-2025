@@ -1,7 +1,7 @@
 # docker-compose.yml (With Nginx Cache Volume Added)
 
 services:
-  # 1. Backend Application Service
+  #gggggggggggg 1. Backend Application Service
   app:
     build: ./NoteAPI 
     deploy:
