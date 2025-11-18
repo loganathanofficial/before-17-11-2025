@@ -1,0 +1,13 @@
+package jdbcproject;
+
+public class loaddrive {
+	public static void main(String [] arg) {
+		try {
+			Class.forName("");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+	
+			System.out.println("not error");
+		}
+	}
+}

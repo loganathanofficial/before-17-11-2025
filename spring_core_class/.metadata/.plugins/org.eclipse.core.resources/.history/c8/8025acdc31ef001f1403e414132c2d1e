@@ -1,0 +1,27 @@
+package com.logu;
+
+import java.util.Scanner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ShapeApp {
+	@Autowired
+	@Qualifier(value="square")
+	Shape s;
+	public void disply() {
+		System.out.println("displayed");
+		s.side();
+	}
+	
+	@Bean(value="string")
+	public Scanner getString() {
+		System.out.println("\n\nScanner object is created");
+		return new Scanner(System.in);
+	
+	}
+
+}

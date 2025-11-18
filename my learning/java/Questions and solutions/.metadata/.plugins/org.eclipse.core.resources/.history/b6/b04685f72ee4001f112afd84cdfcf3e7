@@ -1,0 +1,9 @@
+package com.qa;
+
+public class Whiletest {
+	public static void main(String[] args) {
+		while(123||-123) {
+			System.out.println("working");
+		}
+	}
+}

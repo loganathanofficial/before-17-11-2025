@@ -1,0 +1,27 @@
+package springSecurity.securityApp.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.security.web.csrf.CsrfToken;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@RestController("/")
+public class HelloController {
+	
+	List<String> studentName=new ArrayList<String>();
+	
+	
+	@GetMapping("/getSessionId")
+	public String helloController(HttpServletRequest request) {
+		return "hello navin"+"session id : "+ request.getRequestedSessionId() ;
+	}
+	
+	@GetMapping("/getCSRF-Token")
+	public CsrfToken getCSRFToken( HttpServletRequest request) {
+		return (CsrfToken) request.getAttribute("_csrf");
+	}
+}

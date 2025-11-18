@@ -1,0 +1,11 @@
+package com.qa;
+
+public class integerMIN_VALUE{
+	public static void main(String [] a){
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.SIZE);
+		System.out.println(Integer.BYTES);
+		System.out.println(Integer.toString(1,2));
+
+	} 
+}

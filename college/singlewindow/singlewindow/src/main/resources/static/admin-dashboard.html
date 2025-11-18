@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Single Window Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/admin-dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="./images/logo.png" alt="Logo">
+                <h2>Admin Panel</h2>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Users</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Applications</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Analytics</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Dashboard Overview</h1>
+                <div class="user-info">
+                    <span>Welcome, Admin</span>
+                    <img src="./images/admin-avatar.png" alt="Admin">
+                </div>
+            </div>
+
+            <!-- Dashboard Cards -->
+            <div class="dashboard-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Total Users</h3>
+                        <div class="card-icon" style="background-color: rgba(26, 115, 232, 0.1); color: var(--primary-color);">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="card-value">1,234</div>
+                    <div class="card-footer">
+                        <span style="color: var(--success-color);">↑ 12%</span> from last month
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Pending Applications</h3>
+                        <div class="card-icon" style="background-color: rgba(251, 188, 4, 0.1); color: var(--warning-color);">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="card-value">56</div>
+                    <div class="card-footer">
+                        <span style="color: var(--warning-color);">↑ 8%</span> from last week
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Approved Today</h3>
+                        <div class="card-icon" style="background-color: rgba(52, 168, 83, 0.1); color: var(--success-color);">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-value">23</div>
+                    <div class="card-footer">
+                        <span style="color: var(--success-color);">↑ 15%</span> from yesterday
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Total Revenue</h3>
+                        <div class="card-icon" style="background-color: rgba(0, 188, 212, 0.1); color: var(--secondary-color);">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <div class="card-value">$12,345</div>
+                    <div class="card-footer">
+                        <span style="color: var(--success-color);">↑ 20%</span> from last month
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Users Table -->
+            <div class="table-container">
+                <div class="table-header">
+                    <h3 class="table-title">Recent Users</h3>
+                    <button class="action-btn edit-btn">View All</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1234</td>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td>Business Owner</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>
+                                <button class="action-btn edit-btn">Edit</button>
+                                <button class="action-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1235</td>
+                            <td>Jane Smith</td>
+                            <td>jane@example.com</td>
+                            <td>Officer</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td>
+                                <button class="action-btn edit-btn">Edit</button>
+                                <button class="action-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1236</td>
+                            <td>Mike Johnson</td>
+                            <td>mike@example.com</td>
+                            <td>User</td>
+                            <td><span class="status-badge status-inactive">Inactive</span></td>
+                            <td>
+                                <button class="action-btn edit-btn">Edit</button>
+                                <button class="action-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+package com.logu.insert_proj;
+
+import java.util.Scanner;
+
+public class data_deletion_into_table {
+	public static void main(String[] args) {
+		System.out.print("java performing crud operation with mysql server\n1.Insert\n2.Update\n3.delete\n\t\tChoose you any one :");
+		Scanner sc= new Scanner(System.in);
+		int choise=sc.nextInt();
+		switch (choise) {
+		case 1:
+			try {
+				Class.forName("com.logu.insert_proj.Insert_Operation");
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			break;
+		case 2:
+			
+			break;
+		default:
+			System.out.println("========your operation is not done!!!========");
+			break;
+		}
+		
+	}
+}

@@ -1,0 +1,33 @@
+# docker-compose.yml (With Nginx Cache Volume Added)
+
+services:
+  # 1. Backend Application Service
+  app:
+    build: ./NoteAPI 
+    deploy:
+      mode: replicated
+      replicas: 3 
+
+  # 2. Nginx Load Balancer Service
+  nginx:
+    image: nginx:latest
+    container_name: nginx_cache_with_loadbalancer 
+    
+    ports:
+      - "80:80"
+      
+    # Mount the custom nginx.conf file
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      # ----------------------------------------------------
+      # NEW: Mount a volume for Nginx cache persistence
+      - nginx_cache_data:/var/cache/nginx:rw 
+      # This maps the internal cache directory to a Docker volume
+      # ----------------------------------------------------
+      
+    depends_on:
+      - app
+
+# Define the named volume for the cache data
+volumes:
+  nginx_cache_data:

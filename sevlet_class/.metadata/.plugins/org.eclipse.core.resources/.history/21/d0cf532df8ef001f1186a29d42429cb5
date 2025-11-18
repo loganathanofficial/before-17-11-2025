@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>my  form </title>
+</head>
+<body>
+	<center>
+	<form action="fs">
+		<input type="text" name="nm"><br>
+		<input type="text" name="pl"><br>
+		
+		<button type="submit" value="Request"></button>
+		
+	
+	</form>
+	</center>
+</body>
+</html>

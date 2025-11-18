@@ -1,0 +1,15 @@
+package spring_core_insert_setter_based;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Driver {
+	public static void main(String[] args) {
+
+	
+	BeanFactory beenfact=new ClassPathXmlApplicationContext("my_conf.xml");
+	employee st=beenfact.getBean("mystudent",employee.class);
+	System.out.println(st);
+	}
+	
+}

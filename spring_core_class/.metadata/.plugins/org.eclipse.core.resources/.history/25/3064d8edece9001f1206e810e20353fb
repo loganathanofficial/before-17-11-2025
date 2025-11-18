@@ -1,0 +1,12 @@
+package spring_core_insert_setter_based;
+
+import java.util.Map;
+
+public class student {
+	private int id;
+	private String name;
+	private  Map<String, double> sub_perc;
+	
+	
+	
+}

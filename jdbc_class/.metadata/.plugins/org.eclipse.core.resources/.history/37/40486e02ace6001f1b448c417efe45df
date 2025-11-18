@@ -1,0 +1,28 @@
+package com.logu.insert_proj;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Delete_Operation {
+	static {
+		System.err.println("+================implementation process going on !!!============+");
+	
+	}
+	public void delete_Operation() {
+		
+		Connection con=null;
+		Statement stmt=null;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306?user=admin&password=admin");
+			stmt=con.createStatement();
+			stmt.execute("delete from btm.student where id=10");
+			System.out.println("one data has been deleted!!!");
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}

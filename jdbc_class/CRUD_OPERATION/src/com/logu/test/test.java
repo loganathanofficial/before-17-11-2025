@@ -1,0 +1,18 @@
+package com.logu.test;
+
+public class test {
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.logu.test.demo");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			Class.forName("com.logu.test.demo");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

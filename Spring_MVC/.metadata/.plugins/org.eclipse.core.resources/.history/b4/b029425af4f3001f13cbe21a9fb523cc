@@ -1,0 +1,59 @@
+package com.ogu;
+
+import java.net.http.HttpRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@Controller
+public class studentdataController {
+	@PostMapping("/save")
+	public ModelAndView saveStudentInfo(HttpServletRequest req) {
+		
+		String name=req.getParameter("studentname");
+		String email=req.getParameter("studentemail");
+		String age=req.getParameter("studentage");
+		String gender=req.getParameter("studentgender");
+		
+		ModelAndView view=new ModelAndView("Display.jsp");
+		
+		view.addObject("name", name);
+		view.addObject("email", email);
+		view.addObject("age", age);
+		view.addObject("gender", gender);
+
+		return view;
+		
+	}
+	@PostMapping("/verify")
+	public ModelAndView verify (HttpServletRequest req) {
+		ModelAndView view=new ModelAndView();
+		System.out.println(req.getAttribute("email"));
+		if(req.getAttribute("email")=="vloganathantech@gmail.com"||req.getAttribute("password")=="loganathan.net.com"){
+			view.setViewName("logenin.jsp");
+		}else {
+			view.setViewName("ronguser.jsp");
+		}
+		return view;
+		
+	
+	}
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

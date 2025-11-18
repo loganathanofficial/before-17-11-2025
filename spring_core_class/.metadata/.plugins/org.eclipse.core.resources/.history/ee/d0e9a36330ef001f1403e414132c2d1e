@@ -1,0 +1,15 @@
+package com.logu;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ShapeApp {
+	@Autowired
+	Shape s;
+	public void disply() {
+		System.out.println("displayed");
+		s.side();
+	}
+
+}

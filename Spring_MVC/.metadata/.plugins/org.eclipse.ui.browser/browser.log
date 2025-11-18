@@ -1,0 +1,6 @@
+
+Feb 25, 2025 08:43:16.91 NEW SESSION
+Feb 25, 2025 08:43:16.94 [13208:12932:0225/084316.909:ERROR:fallback_task_provider.cc(126)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Feb 25, 2025 08:44:15.50 [13208:12932:0225/084415.508:ERROR:sitelist_downloader.cc(244)] Sitelist download failed: ERR_INTERNET_DISCONNECTED url=https://go.microsoft.com/fwlink/?linkid=2133855&bucket=2 cid=N/A status=-106
+Feb 25, 2025 09:37:29.02 [13208:12932:0225/093729.011:ERROR:fallback_task_provider.cc(126)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Feb 25, 2025 09:37:29.52 [13208:12932:0225/093729.520:ERROR:fallback_task_provider.cc(126)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.

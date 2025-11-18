@@ -1,0 +1,66 @@
+package com.logu.insert_proj;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class Delete_Operation {
+	static {
+//		System.err.println("+================implementation process going on !!!============+");
+		Delete_Operation delete=new Delete_Operation();
+		delete.delete_Operation();
+	}
+	public void delete_Operation() {
+		
+		Connection con=null;
+		PreparedStatement pstmt=null;
+		
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=admin");
+			
+			
+			
+			try {
+				pstmt=con.prepareStatement("delete from btm.student where id=?");
+				Scanner scanner=new Scanner(System.in);
+				System.out.print("Enter id : ");
+				int id=scanner.nextInt();
+				pstmt.setInt(1, id);
+				pstmt.executeUpdate();
+//				scanner.close();
+				System.err.println("\n\none data has been deleted!!!\n\n");
+			}catch(SQLException e){
+				System.out.println("id not found !!!\n\n");
+				e.printStackTrace();
+			}
+			
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			if(pstmt!=null) {
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			
+			
+			if(con!=null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			
+		}
+	}
+}

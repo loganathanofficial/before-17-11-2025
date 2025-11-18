@@ -1,0 +1,19 @@
+package selfWritternCode;
+
+public class StringRevers_char {
+	static{
+		System.out.println("it is a static block");
+		}
+	
+	static String name="loganathan";
+	static String rname="";
+	public static void main(String [] arge) {
+		
+	
+		for(int i=name.length()-1;i>-1;i--) {
+			rname +=name.charAt(i);
+			
+		}
+		System.out.println(rname);
+	}
+}

@@ -1,0 +1,35 @@
+package spring_core_insert_setter_based;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Employee {
+	
+	@Value(value="1")
+	private int id;
+	
+	@Value(value="loganathan")
+	private String name;
+	
+	@Value("working")
+	private String status;
+	
+//	@Override
+//	public String toString() {
+//		// TODO Auto-generated method stub
+//		return super.toString();
+//	}
+	public void work() {
+		System.out.println("the emloyee "+toString());
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", status=" + status + "]";
+	}
+	
+	
+	
+	
+}

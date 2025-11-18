@@ -1,0 +1,29 @@
+!SESSION 2025-01-28 07:44:54.090 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product org.eclipse.epp.package.dsl.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.dsl.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-28 07:45:04.632
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-28 07:45:40.269
+!MESSAGE Logback config file: /home/loganathan/Desktop/my learning/java/oops/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-01-28 07:45:53.296
+!MESSAGE No search provider was registered. Tasks search is not available.
+!SESSION 2025-01-30 12:14:32.035 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product org.eclipse.epp.package.dsl.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.dsl.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-30 12:14:42.494
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-30 12:14:56.403
+!MESSAGE Logback config file: /home/loganathan/Desktop/my learning/java/oops/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml

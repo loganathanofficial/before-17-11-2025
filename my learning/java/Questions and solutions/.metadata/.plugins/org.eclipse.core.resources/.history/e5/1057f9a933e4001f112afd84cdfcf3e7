@@ -1,0 +1,18 @@
+package com.qa;
+
+public class Whiletest {
+	
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+class one() {
+	int one=1;
+	
+}
+
+class two extends one  () {
+	int two=2;
+}

@@ -1,0 +1,10 @@
+#layout {
+  background-color: #ebebeb; /* light gray background */
+  min-height: 100vh; 
+  max-width: 100vw;        /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  /* optional smooth scrolling */
+  scroll-behavior: smooth;
+}
+

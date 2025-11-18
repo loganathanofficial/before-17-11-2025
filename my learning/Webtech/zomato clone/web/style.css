@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+body{
+    width: 100vw;
+    background-color: #efefef;
+}
+header{
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+nav{
+    height: 95%;
+    width: 85%;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    gap: 20px;
+}
+#logo-container{
+    height: 45px;
+    flex-basis: 15%;
+    position: relative;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+#logo-container span{
+    width: 60%;
+}
+#logo-container span>img{
+    height: 37px;
+}
+#search-container{
+    flex-basis: 65%;
+    height: 60px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px #000000be;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#location{
+    flex-basis: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid gray;
+    gap: 10px;
+    margin-left: 5px;
+}
+#location span{
+    display: flex;
+    align-items: center;
+}
+#loc{
+    color: #f45b74;
+}
+#name{
+    font-size: larger;
+}
+#down{
+    margin-left: 70px;
+}
+#location span input{
+    width: 220px;
+    font-weight: 400;
+    border: none;
+    outline: none; 
+    margin-left: 5px;
+}
+#input-box{
+    flex-basis: 60%;
+    height: 30px;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#input-box svg{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+#input-box .input-box input{
+    width: 350px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: larger;
+}
+#reg-container{
+    flex-basis: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+}
+#reg-container span a{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+}
+#log a{
+    position: relative;
+    left: 25px;
+}
+#sign a{
+    position: relative;
+    right: 28px;
+}
+#log a:hover{
+    font-weight: 400;
+}
+#sign a:hover{
+    font-weight: 400;
+}
+#navigate{
+    background-color: #ffffff;
+    height: 40px;
+}
+#para{
+    background-color: #ffffff;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 155px;
+    /* margin-top: 30px; */
+    gap: 10px;
+    padding: 20px;
+}
+#para a{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: gray;
+}
+#para a:hover{
+    color: #f45b74;
+}
+#para span{
+    color: rgb(167, 163, 163);
+}
+#services{
+    height: 150px;
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#services article{
+    height: 100%;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 220px;
+    align-items: center;
+    gap: 50px;
+}
+.images{
+    height: 60px;
+    width: 60px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images img{
+    height: 40px;
+    width: 40px;
+}
+#services article div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#dining .images{
+    height: 75px;
+    width: 75px;
+    background-color: #f1f1f1;
+}
+#delivery .images{
+    height: 75px;
+    width: 75px;
+    background-color: #dfdfdf;   
+}
+#nightlife .images{
+    height: 75px;
+    width: 75px;
+    background-color: #b4deef;
+}
+.txt{
+    font-size: x-large;
+}
+#collection{
+    margin-left: 210px;
+    font-weight: 500;
+    font-size: 40px;
+}
+#explore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 210px;
+}
+#explore span{
+    position: absolute;
+    right: 90px;
+    top: 360px;
+    color: #f45b74;
+    font-size: large;
+}
+#explore p{
+    font-size: x-large;
+    font-weight: 100;
+    margin-left: 3px;
+    margin-top: 25px;
+}
+#explore span{
+    margin-right: 200px;
+    font-size: large;
+}
+#explore svg{
+    margin-right: 260px;
+    position: relative;
+    top: 10px;
+    color: #f45b74;
+}
+#screen img{
+    height: 50vh;
+    width: 80vw;
+    margin-left: 210px;
+    margin-top: 20px;
+}
+#pto{
+    background-color: white;
+    height: 100%;
+}
+#screen-2 img{
+    margin-top: 45px;
+    margin-left: -45px;
+}
+#pto span img{
+    height: 38vh;
+    width: 80vw;
+    position: relative;
+    left: 200px;
+}
+#pto h1{
+    margin-top: 30px;
+    margin-left: 200px;
+    font-size: 40px;
+    font-weight: 500;
+}
+#hotel .img-cont img{
+    height: 33vh;
+    width: 20vw;
+    border-radius: 6%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#hotel .des{
+    position: relative;
+    top: 20px;
+    left: 220px;
+}
+#hotel .des h2{
+    font-size: 26px;
+    font-weight: 600;
+}
+#hotel .des .one{
+    font-size: 20px;
+    color: gray;
+}
+#hotel .des .two{
+    font-size: 20px;
+    color: darkgray;
+}
+.star p{
+    margin-left: 620px;
+    font-size: 20px;
+    position: relative;
+    bottom: 65px;
+}
+.star svg{
+    margin-left: 645px;
+    font-size: 5px;
+    position: relative;
+    bottom: 88px;
+    left: 3px;
+}

@@ -1,0 +1,5 @@
+package springSecurity.securityApp.controller;
+
+public class HelloController {
+
+}

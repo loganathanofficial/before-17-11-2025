@@ -1,0 +1,9 @@
+package com.logu;
+
+public class Square  implements Shape{
+	@Override
+	public void said() {
+		System.out.println("4 saids");
+	}
+
+}

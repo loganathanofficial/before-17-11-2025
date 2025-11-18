@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring_core_app_2&apos; to &apos;spring_core_insert_setter_based&apos;" description="Rename resource &apos;spring_core_app_2&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/spring_core_app_2" name="spring_core_insert_setter_based" stamp="1739353963766" updateReferences="true"/>
+</session>

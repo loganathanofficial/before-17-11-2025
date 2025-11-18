@@ -1,0 +1,60 @@
+package com.logu;
+
+import java.util.Arrays;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class SaveBatchAndStudents {
+	public static void main(String[] args) {
+		EntityManagerFactory fac=Persistence.createEntityManagerFactory("for_developer");
+		EntityManager mam=fac.createEntityManager();
+		EntityTransaction tran=mam.getTransaction();
+		tran.begin();
+		
+		Batch b1=new Batch();
+		b1.setSubject("Java");
+		b1.setBatch_code("javaB1");
+		b1.setTrainer("loganathan");
+		
+		
+		Batch b2=new Batch();
+		b2.setSubject("sql");
+		b2.setBatch_code("sqlB2");
+		b2.setTrainer("swatha");
+		
+		Student s1=new Student();
+		s1.setName("santhosh");
+		s1.setPhone(987654321L);
+		s1.setPerc(82.22);
+		
+
+		Student s2=new Student();
+		s2.setName("pugzal");
+		s2.setPhone(8765456789L);
+		s2.setPerc(71.42);
+		
+
+		Student s3=new Student();
+		s3.setName("dhanush");
+		s3.setPhone(987656789L);
+		s3.setPerc(90.99);
+		
+		
+		
+		
+		
+		
+		b1.setStudents(Arrays.asList(s1,s2,s3));
+		b2.setStudents(Arrays.asList(s3,s2));
+		
+		mam.persist(b1);
+		mam.persist(b2);
+		
+		tran.commit();
+		
+		System.out.println("you data has been inserted succesfully");
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;autowired&apos; to &apos;10.autowired&apos;" description="Rename resource &apos;autowired&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/autowired" name="10.autowired" stamp="1739850049767" updateReferences="true"/>
+</session>

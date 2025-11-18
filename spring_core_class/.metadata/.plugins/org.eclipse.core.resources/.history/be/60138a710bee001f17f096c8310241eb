@@ -1,0 +1,13 @@
+package com.logu;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public interface driver {
+	public static void main(String[] args) {
+		ApplicationContext a=new AnnotationConfigApplicationContext(person.class);
+		person p=a.getBean("person",person.class);
+		System.out.println(p);
+	}
+}
+

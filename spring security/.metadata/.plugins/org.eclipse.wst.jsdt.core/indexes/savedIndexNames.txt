@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\do_nont_touch\spring security\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3556757765.index
+3748615420.index
+2338528795.index
+2778791730.index
+3785832445.index
+2159372868.index

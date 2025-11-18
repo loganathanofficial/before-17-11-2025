@@ -1,0 +1,9 @@
+package selfWritternCode;
+import java.lang.StringBuilder;
+public class StringReverse_StringBuilder {
+	public static void main(String are[]) {
+		StringBuilder name=new StringBuilder("loganathan");
+		System.out.println(name.reverse());
+		System.out.println(name.indexOf("ol"));
+	}
+}

@@ -1,0 +1,42 @@
+export const customerData = [
+  {
+    id: 'CUST-001',
+    name: 'Alice Johnson',
+    email: 'alice.j@example.com',
+    orders: 5,
+    totalSpent: 450.75,
+    signupDate: '2024-03-15',
+  },
+  {
+    id: 'CUST-002',
+    name: 'Bob Smith',
+    email: 'bob.s@example.com',
+    orders: 1,
+    totalSpent: 55.50,
+    signupDate: '2024-08-20',
+  },
+  {
+    id: 'CUST-003',
+    name: 'Charlie Brown',
+    email: 'charlie.b@example.com',
+    orders: 12,
+    totalSpent: 1245.99,
+    signupDate: '2023-11-01',
+  },
+  {
+    id: 'CUST-004',
+    name: 'Diana Prince',
+    email: 'diana.p@example.com',
+    orders: 2,
+    totalSpent: 112.75,
+    signupDate: '2024-05-10',
+  },
+  {
+    id: 'CUST-005',
+    name: 'Ethan Hunt',
+    email: 'ethan.h@example.com',
+    orders: 8,
+    totalSpent: 787.20,
+    signupDate: '2023-09-01',
+  },
+];

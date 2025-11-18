@@ -1,0 +1,25 @@
+Test 1:
+
+All Questions are complusory. 
+
+1. You have been to develop a function to find total distance travelled by the train
+    moving @ a speed of 120/kmph with a time of 360 minutes. The function should be
+    resuable for different values of speed and time 
+
+2. The principal of the school asked to build a function which helps to calculate
+     percentage of the student. Student has attended 6 subjects and all the six subject
+     marks are stored in subjArr array. The function should recieve the array and find 
+     the overall percentage and return the calculated percentage.
+
+3. The Super market store owner is finding difficulty in calculate the sum of all the product price before discount and after discount. Being a developer help him/her by designing a function which will make his/her daily life easy. 
+As a developer you decide the function parameters and return type
+
+4.  Bank wants a functions to be developed to perform below trasactions
+        1. Withdraw - takes accbal and a amount to be withdrawn 
+        2. Deposit - takes accbal and a amount to be deposited
+        3. Fund transfer - takes fromaccbal , toaccbal and amount to be transfered
+    Provide solution for the requirement
+
+5. you have been asked to read a string from command line in the below format
+        India$Celebrated$78th$Independence$Day$In$2024
+        Split the string on $ and display.

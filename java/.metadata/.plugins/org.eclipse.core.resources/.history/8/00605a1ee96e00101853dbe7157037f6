@@ -1,0 +1,12 @@
+package selfWritternCode;
+
+public class StringRevers_char {
+	public static void main(String [] arge) {
+		String name="loganathan";
+		String rname="";
+		for(int i=name.length()-1;i<0;i--) {
+			rname +=name.charAt(i);
+		}
+		System.out.println(rname);
+	}
+}

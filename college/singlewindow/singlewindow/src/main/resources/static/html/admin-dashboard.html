@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/admin-dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="./images/logo.png" alt="Logo">
+                <h2>Admin Panel</h2>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        Users
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <img src="./images/user.png" alt="User">
+                    <span>Admin</span>
+                </div>
+            </div>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Total Users</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="card-value">1,234</div>
+                    <div class="card-footer">Active Users</div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Total Applications</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-value">567</div>
+                    <div class="card-footer">Pending Applications</div>
+                </div>
+            </div>
+            <div class="table-container">
+                <div class="table-header">
+                    <h2 class="table-title">Recent Applications</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>
+                                <button class="action-btn edit-btn">Edit</button>
+                                <button class="action-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Smith</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td>
+                                <button class="action-btn edit-btn">Edit</button>
+                                <button class="action-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript/admin-dashboard.js"></script>
+</body>
+</html> 

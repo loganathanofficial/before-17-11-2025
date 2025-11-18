@@ -1,0 +1,12 @@
+.boardContent {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 10px;
+}

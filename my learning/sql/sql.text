@@ -1,0 +1,170 @@
+1.WRITE A QUERY TO DISPLAY ALL THE DETAILS FROM THE EMPLOYEE TABLE. 
+	"select * from emp;"
++-------+---------+-----------+------+------------+----------+---------+------+
+| empno | e_name  | job       | mgr  | hiredate   | sal      | comm    | d_id |
++-------+---------+-----------+------+------------+----------+---------+------+
+|     1 | Alice   | Manager   | NULL | 2024-01-01 | 80000.00 | 5000.00 |    1 |
+|     2 | Bob     | Assistant |    1 | 2024-02-01 | 50000.00 | 2000.00 |    2 |
+|     3 | Charlie | Analyst   |    1 | 2024-03-01 | 60000.00 | 3000.00 |    3 |
+|     4 | David   | Clerk     |    3 | 2024-04-01 | 40000.00 | 1000.00 |    1 |
+|     5 | Eva     | Salesman  |    1 | 2024-05-01 | 70000.00 | 4000.00 |    2 |
+|     6 | Frank   | Manager   | NULL | 2024-06-01 | 90000.00 | 6000.00 |    3 |
+|     7 | Grace   | Clerk     |    4 | 2024-07-01 | 45000.00 | 1500.00 |    1 |
+|     8 | Hank    | Analyst   |    6 | 2024-08-01 | 65000.00 | 3500.00 |    2 |
+|     9 | Ivy     | Salesman  |    5 | 2024-09-01 | 72000.00 | 4200.00 |    3 |
+|    10 | Jack    | Assistant |    7 | 2024-10-01 | 55000.00 | 2500.00 |    1 |
++-------+---------+-----------+------+------------+----------+---------+------+
+10 rows in set (0.00 sec)
+
+	
+2.WAQTD NAMES OF ALL THE EMPLOYEES. 
+	"select e_name from emp;"
++---------+
+| e_name  |
++---------+
+| Alice   |
+| Bob     |
+| Charlie |
+| David   |
+| Eva     |
+| Frank   |
+| Grace   |
+| Hank    |
+| Ivy     |
+| Jack    |
++---------+
+10 rows in set (0.00 sec)
+
+		
+3.WAQTD NAME AND SALARY GIVEN TO ALL THE EMPLOYEES. 
+	"select e_name,salary from emp;"
++---------+
+| e_name  |
++---------+
+| Alice   |
+| Bob     |
+| Charlie |
+| David   |
+| Eva     |
+| Frank   |
+| Grace   |
+| Hank    |
+| Ivy     |
+| Jack    |
++---------+
+10 rows in set (0.00 sec)
+	
+4.WAQTD NAME AND JOBTITLE GIVEN TO ALL THE EMPLOYEES. 
+	"select e_name,jobtitle from emp;"
++---------+-----------+
+| e_name  | job       |
++---------+-----------+
+| Alice   | Manager   |
+| Bob     | Assistant |
+| Charlie | Analyst   |
+| David   | Clerk     |
+| Eva     | Salesman  |
+| Frank   | Manager   |
+| Grace   | Clerk     |
+| Hank    | Analyst   |
+| Ivy     | Salesman  |
+| Jack    | Assistant |
++---------+-----------+
+10 rows in set (0.00 sec)
+
+5.WAQTD EMPLOYEE ID AND DEPARTMENT NUMBER OF ALL THE EMPLOYEES IN EMP TABLE.
+	"select e_name,d_id from emp;"
++---------+------+
+| e_name  | d_id |
++---------+------+
+| Alice   |    1 |
+| Bob     |    2 |
+| Charlie |    3 |
+| David   |    1 |
+| Eva     |    2 |
+| Frank   |    3 |
+| Grace   |    1 |
+| Hank    |    2 |
+| Ivy     |    3 |
+| Jack    |    1 |
++---------+------+
+10 rows in set (0.00 sec)
+
+6.WAQTD ENAME AND HIREDATE OF ALL THE EMPLOYEES. 
+	"select e_name,hiredate from emp;"
++---------+------------+
+| e_name  | hiredate   |
++---------+------------+
+| Alice   | 2024-01-01 |
+| Bob     | 2024-02-01 |
+| Charlie | 2024-03-01 |
+| David   | 2024-04-01 |
+| Eva     | 2024-05-01 |
+| Frank   | 2024-06-01 |
+| Grace   | 2024-07-01 |
+| Hank    | 2024-08-01 |
+| Ivy     | 2024-09-01 |
+| Jack    | 2024-10-01 |
++---------+------------+
+10 rows in set (0.00 sec)
+
+
+7.WAQTD NAME AND DESIGNATION OF ALL THE EMPLOYEES .
+	"select e_name,job from emp;"
++---------+-----------+
+| e_name  | job       |
++---------+-----------+
+| Alice   | Manager   |
+| Bob     | Assistant |
+| Charlie | Analyst   |
+| David   | Clerk     |
+| Eva     | Salesman  |
+| Frank   | Manager   |
+| Grace   | Clerk     |
+| Hank    | Analyst   |
+| Ivy     | Salesman  |
+| Jack    | Assistant |
++---------+-----------+
+10 rows in set (0.01 sec)
+
+	
+8.WAQTD NAME. JOB AND SALARY GIVEN ALL THE EMPLOYEES. 
+	"select e_name,job,sal from emp;"
++---------+-----------+----------+
+| e_name  | job       | sal      |
++---------+-----------+----------+
+| Alice   | Manager   | 80000.00 |
+| Bob     | Assistant | 50000.00 |
+| Charlie | Analyst   | 60000.00 |
+| David   | Clerk     | 40000.00 |
+| Eva     | Salesman  | 70000.00 |
+| Frank   | Manager   | 90000.00 |
+| Grace   | Clerk     | 45000.00 |
+| Hank    | Analyst   | 65000.00 |
+| Ivy     | Salesman  | 72000.00 |
+| Jack    | Assistant | 55000.00 |
++---------+-----------+----------+
+10 rows in set (0.00 sec)
+	
+9.WAQTD DNAME PRESENT IN DEPARTMENT TABLE.
+	"select d_name from department;"
++------------+
+| d_name     |
++------------+
+| mahesh     |
+| loganathan |
+| vengat     |
++------------+
+3 rows in set (0.01 sec)
+
+	
+10.WAQTD DNAME AND LOCATION PRESENT IN DEPT TABLE. 
+	"select d_name,loc from department;"
++------------+-----------+
+| d_name     | loc       |
++------------+-----------+
+| mahesh     | andhra    |
+| loganathan | tamilnadu |
+| vengat     | salem     |
++------------+-----------+
+3 rows in set (0.00 sec)

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="testjava.ThrowUserEception"/>
+    <fullyQualifiedTypeName name="selfWritternCode.LearnOverriding"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.io.StreamTokenizer"/>
+    <fullyQualifiedTypeName name="selfWritternCode.TestLearnOverriding"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+</qualifiedTypeNameHistroy>

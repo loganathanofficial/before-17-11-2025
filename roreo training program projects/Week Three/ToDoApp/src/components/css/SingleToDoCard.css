@@ -1,0 +1,148 @@
+.card {
+  width: 40%;
+  background-color: #551b97cb;
+  border: none;
+  border-radius: 10px;
+  padding-top: 0;
+  color: aliceblue;
+  font-weight: bold;
+  position: relative;
+}
+
+.cardTop {
+  height: 50px;
+  margin-top: 0;
+  margin-left: 10px;
+ 
+}
+
+.card ol {
+  border: none;
+  outline: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+}
+
+.card ol li {
+  margin: 5px;
+  min-height: 40px;
+  max-width: 90%;
+  background-color: rgb(53, 24, 80);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
+  position: relative;
+}
+.card ol li p{
+      
+      max-width: 100%;
+      word-wrap: break-word;
+      white-space: normal;
+      margin: 1px auto;
+      padding: 10px;
+    
+      box-sizing: border-box;
+
+}
+#DoMoreBtn {
+  height: 15px;
+  width: 20px;
+  margin-left: 19px;
+  background-color: rgb(0, 204, 255);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.textarea {
+  margin: 10px;
+  height: 40px;
+  width: 70%;
+  background-color: transparent;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s ease 0.2s;
+}
+.textarea::placeholder {
+  color: aliceblue;
+}
+.textarea:hover {
+  background-color: rgb(44, 28, 65);
+}
+
+
+.card > button {
+  height: 40px;
+  width: 70px;
+  margin: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(60, 89, 250);
+  cursor: pointer;
+}
+.card > button:hover {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 10px rgb(255, 255, 255);
+  color: beige;
+  background-color: rgba(60, 88, 250, 0.863);
+}
+
+.popup {
+  position: absolute;
+    background: linear-gradient(50deg, rgb(204, 94, 231), rgb(171, 55, 238));
+
+  border: 1px solid #ccc;
+  padding: 1em;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  top: 45px; 
+  
+}
+
+.popup button {
+  flex: 1;
+  min-width: 80px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(60, 89, 250);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: rgba(60, 88, 250, 0.863);
+  box-shadow: 1px 1px 10px rgb(255, 255, 255);
+  color: beige;
+}
+
+/*following for mobile  */
+@media (max-width: 479px) {
+  
+  .card {
+    flex-basis: 95%;
+    max-width: 100%;
+  }
+ 
+}
+

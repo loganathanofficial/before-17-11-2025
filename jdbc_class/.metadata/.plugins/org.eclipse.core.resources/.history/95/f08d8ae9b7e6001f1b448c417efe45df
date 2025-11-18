@@ -1,0 +1,59 @@
+package com.logu.insert_proj;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class Insert_Operation {
+	static {
+		insertOperation();
+	}
+	public static void insertOperation() {
+		Scanner sc=new Scanner(System.in);
+		int id=sc.nextInt();
+		String entername=sc.next();
+		double enteredperc=sc.nextDouble();
+		Connection con=null;
+		PreparedStatement stmt=null;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("driver is loader succesfully");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/btm?user=root&password=admin");
+			System.out.println("connection sucseed");
+			stmt=con.prepareStatement("insert into student values(?1,'2?',?3)");
+			System.out.println("statemente has been created!!!");
+			stmt.setInt(1, id);
+			stmt.setString(2, entername);
+			stmt.setDouble(3, enteredperc);
+			stmt.executeQuery();
+			System.out.println("entered data has been inserted succesfully!!!");
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			sc.close();
+			if(stmt!=null) {
+				try {
+					stmt.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}else {
+//				System.out.println(" your program has been ");
+			}
+			
+			if(con!=null) {
+				try {
+					stmt.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+	
+	}
+}

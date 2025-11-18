@@ -1,0 +1,36 @@
+package spring_core_insert_setter_based;
+
+import java.util.Map;
+
+public class student {
+	private int id;
+	private String name;
+	private  Map<String, Integer> sub_perc;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Map<String, Integer> getSub_perc() {
+		return sub_perc;
+	}
+	public void setSub_perc(Map<String, Integer> sub_perc) {
+		this.sub_perc = sub_perc;
+	}
+	@Override
+	public String toString() {
+		return "student [id=" + id + ", name=" + name + ", sub_perc=" + sub_perc + "]";
+	}
+	
+	
+	
+	
+	
+}

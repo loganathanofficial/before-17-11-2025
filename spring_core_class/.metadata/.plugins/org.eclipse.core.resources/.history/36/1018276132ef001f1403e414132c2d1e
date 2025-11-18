@@ -1,0 +1,23 @@
+package com.logu;
+
+import java.util.Scanner;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = "com.logu")
+
+public class Config{
+	
+	
+	@Bean(name="string")
+	public Scanner getScanner() {
+		System.out.println("\n\nScanner object is created");
+		return new Scanner(System.in);
+	
+	}
+	
+	
+}

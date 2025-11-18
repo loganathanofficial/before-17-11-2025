@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Columns"/>
+    <fullyQualifiedTypeName name="java.awt.datatransfer.SystemFlavorMap"/>
+    <fullyQualifiedTypeName name="com.logu.jpa_configuration.Trainer"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+    <fullyQualifiedTypeName name="com.logu.Person"/>
+    <fullyQualifiedTypeName name="com.logu.Pancard"/>
+    <fullyQualifiedTypeName name="com.logu.jpa_configuration.Employee"/>
+    <fullyQualifiedTypeName name="com.logu.jpa_configuration.Department"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="java.lang.classfile.TypeAnnotation.EmptyTarget"/>
+    <fullyQualifiedTypeName name="com.logu.jpa_configuration.User"/>
+    <fullyQualifiedTypeName name="com.logu.jpa_configuration.AadharCard"/>
+    <fullyQualifiedTypeName name="org.jboss.jandex.Main"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="javax.persistence.NoResultException"/>
+    <fullyQualifiedTypeName name="com.logu.jpa_configuration.QuestionData"/>
+    <fullyQualifiedTypeName name="com.logu.jpa_configuration.AnswerData"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="com.logu.Merchant"/>
+    <fullyQualifiedTypeName name="com.logu.Product"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="com.logu.Student"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
+    <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="javax.persistence.Query"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

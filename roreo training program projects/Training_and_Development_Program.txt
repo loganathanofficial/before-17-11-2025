@@ -1,0 +1,82 @@
+Training and Development Program (Rodeo Digital Pvt. Ltd 2022)
+
+WEEKLY CURRICULUM TABLE
+-------------------------------------------------------------
+Week | Topics                                     | Projects/Assignments       | Evaluation Criteria
+-------------------------------------------------------------
+1    | HTML, CSS, HTTP basics, Flexbox, Grid,     | Portfolio webpage          | Layout correctness, mobile-ready, clean code
+     | Responsive                                 |                            |
+-------------------------------------------------------------
+2    | JS fundamentals, ES6, DOM, events          | Interactive form/quiz app  | DOM usage, form logic, code quality
+-------------------------------------------------------------
+3    | React basics: components, props, state,    | ToDo or counter app        | Component reuse, state management
+     | events                                     |                            |
+-------------------------------------------------------------
+4    | React Router, useEffect, Context API,      | Blog UI                    | Routing, state, form control
+     | forms                                      |                            |
+-------------------------------------------------------------
+5    | Node.js modules, Express, REST APIs,       | Notes API, in-memory       | REST design, error handling
+     | middleware                                 |                            |
+-------------------------------------------------------------
+6    | PostgreSQL schema, SQL commands,           | DB schema for ecommerce    | Schema correctness, normalization
+     | normalization                              |                            |
+-------------------------------------------------------------
+7    | Axios, CORS, file uploads, filtering       | Admin Dashboard            | API integration, UI updates
+-------------------------------------------------------------
+8    | JWT auth, backend protection, React auth   | Auth system, protected     | Token handling, route protection
+     |                                            | routes                     |
+-------------------------------------------------------------
+9    | Capstone planning, UI flows, endpoint      | Capstone skeleton setup    | Planning quality, API endpoints stub
+     | design                                     |                            |
+-------------------------------------------------------------
+10   | Capstone: CRUD, filter, UI polish          | Capstone completion        | Feature completeness, UX/UI
+-------------------------------------------------------------
+11   | Docker, Docker Compose, deployment         | Docker-compose capstone    | System up correctly, docs quality
+-------------------------------------------------------------
+12   | Design Patterns, Code Quality, Refactor    | Capstone code refactor     | Folder structure, readability, code quality
+-------------------------------------------------------------
+
+ASSESSMENTS & GRADING
+-------------------------------------------------------------
+Assessment Dates:
+Sept 1, Oct 1, Nov 3, Dec 1, Jan 1, Feb 2
+
+Area                  | Weightage | Person In Charge
+-------------------------------------------------------------
+Capstone Project      | 40        | Moorthy
+Weekly Assignments    | 30        | Karthik
+Code Quality & Git    | 10        | Moorthy
+Participation Reviews | 10        | RD Team
+Deployment/Docker     | 10        | Moorthy
+
+Grading: 1-5 Rating System for each assessment area
+
+BEHAVIOUR EVALUATION
+-------------------------------------------------------------
+Behaviour              | Weightage
+-------------------------------------------------------------
+Self Aware & Curious   | 15
+Extreme Ownership      | 15
+Fast, Focused, Fearless| 10
+Innovate Relentlessly  | 10
+
+RATING GRADE CONVERSION
+-------------------------------------------------------------
+Total Weightage | Grade     | Result
+-------------------------------------------------------------
+90-100          | Excellent | Retained (Onboarding rewards apply)
+75-90           | Average   | Retained
+<75             | B/Average | Eliminated
+
+Note: More than 70/75/85 in certain months required for retention.
+Consecutive B in behaviour assessment = elimination.
+
+BENEFITS
+-------------------------------------------------------------
+Duration   | Package | Level | Other Benefits
+-------------------------------------------------------------
+1-3 Months | 7.5K    | L1    | 
+3-6 Months | 15K     | L2    | 
+Wild Card  | +2K     |       | Special reward
+90-100     | 21K     |       | 18K onboarding reward
+85-90      | 18K     |       | 9K onboarding reward

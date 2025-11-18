@@ -1,0 +1,48 @@
+package com.logu.insert_proj;
+
+import java.util.Scanner;
+
+public class Crud_Operation {
+	public static int choise=4;
+	public static void main(String[] args) {
+		System.out.print("java performing crud operation with mysql server\n1.Insert\n2.Update\n3.delete\n4.'Exit'\t\tChoose you any one :");
+		Scanner sc= new Scanner(System.in);
+		choise=sc.nextInt();
+		sc.close();
+		switch (choise) {
+		case 1:
+			try {
+				Class.forName("com.logu.insert_proj.Insert_Operation");
+				main(null);
+				
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+			break;
+			
+		case 2:
+			try {
+				Class.forName("com.logu.insert_proj.Update_Operation");
+				main(null);
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+			break;
+			
+		case 3:
+			try {
+				Class.forName("com.logu.insert_proj.Delete_Operation");
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+			break;	
+		case 4:
+			System.err.println("you server has been exited from runtime environment");
+			System.exit(0);
+		default:
+			System.out.println("========your operation is not done try  again!!!========");
+			break;
+		}
+		
+	}
+}

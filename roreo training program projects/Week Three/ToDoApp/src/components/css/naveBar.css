@@ -1,0 +1,17 @@
+.naveBar{
+    height: 60px;
+    max-width: 100%;
+    background-color: rgb(113, 28, 192);
+    position: sticky;
+    top: 2px;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    
+}
+.naveBar p{
+    height: 50%;
+    color: blanchedalmond;
+    font-weight: bold;
+    margin-left: 10px;
+} 

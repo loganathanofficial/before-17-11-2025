@@ -1,0 +1,31 @@
+package com.logu.form;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.GenericServlet;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/fs")
+public class FirstServlet extends GenericServlet {
+
+	@Override
+	public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
+		
+		//UI form data
+		String name=req.getParameter("nm");
+		String place=req.getParameter("pl");
+		
+		//persistence
+		PrintWriter out=resp.getWriter();
+		String htmlcode="<html><body bgcolor='cyne'><h1>hi "+name+" when your comming from "+place+"<h1></body></html>";
+		out.println(htmlcode);
+	
+		
+		
+	}
+
+}

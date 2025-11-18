@@ -1,0 +1,14 @@
+package com.logu;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Pasenger {
+	
+	Ticket t ;
+	
+	public void travel() {
+		System.out.println("trave has been started");
+		t.ticketbooked();
+	}
+}

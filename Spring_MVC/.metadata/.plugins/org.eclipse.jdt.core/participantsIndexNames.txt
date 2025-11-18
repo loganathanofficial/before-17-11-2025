@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+C:\Users\Admin\Desktop\Spring_MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1703576372.index
+\SpringMVCbasic\src\main\java
+C:\Users\Admin\Desktop\Spring_MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2575422980.index
+\SpringMVCbasic\src\main\java
+C:\Users\Admin\Desktop\Spring_MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1019780198.index
+\SecondApp\src\main\java

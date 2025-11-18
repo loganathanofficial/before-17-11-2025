@@ -1,0 +1,12 @@
+package com.logu.insert_proj;
+
+public class karthik {
+	public void main() {
+		System.out.println("hi kathi");
+	}
+	public static void main(String[] args) {
+		System.out.println("hi kathi");
+		karthik k=new karthik();
+		k.main();
+	}
+}

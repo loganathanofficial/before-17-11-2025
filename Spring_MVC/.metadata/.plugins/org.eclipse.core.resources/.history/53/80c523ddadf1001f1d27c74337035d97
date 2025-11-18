@@ -1,0 +1,6 @@
+package com.ogu;
+@org.springframework.context.annotation.Configuration
+public class Configuration {
+	
+
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+D:\do_nont_touch\my learning\java\.metadata\.plugins\org.eclipse.jdt.core
+2018124883.index
+1288848795.index
+2524321727.index
+1195455883.index
+879386859.index
+1865797976.index

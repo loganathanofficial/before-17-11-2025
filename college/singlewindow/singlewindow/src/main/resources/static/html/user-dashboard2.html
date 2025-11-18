@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Dashboard - Startup Approval System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	rel="stylesheet">
+<script
+	src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="./css/user-dashboard2.css">
+
+<style>
+#particles-js {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+body {
+	background: linear-gradient(135deg, #6e7dff, #42a5f5);
+	color: #fff;
+	font-family: 'Segoe UI', sans-serif;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+.sidebar {
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	border-radius: 0 15px 15px 0;
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 15px;
+	color: #fff;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease;
+}
+
+.card:hover {
+	transform: scale(1.03);
+}
+
+.nav-link {
+	color: #fff;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.nav-link:hover {
+	color: #ffd700;
+}
+
+.hidden {
+	display: none;
+}
+
+.timeline {
+	list-style: none;
+	padding: 0;
+}
+
+.timeline li {
+	margin-bottom: 15px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.timeline li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 6px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+@media ( max-width : 768px) {
+	.sidebar {
+		border-radius: 0;
+		text-align: center;
+	}
+	.timeline li {
+		padding-left: 30px;
+	}
+}
+
+.timeline {
+	list-style: none;
+	padding: 0;
+	color: #fff;
+}
+
+.timeline .step {
+	margin-bottom: 15px;
+	padding-left: 20px;
+	position: relative;
+	font-size: 16px;
+}
+
+.timeline .step::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 6px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.timeline .step .badge {
+	padding: 5px 10px;
+}
+
+#step1, #step2, #step3, #step4, #step5 {
+	transition: background-color 0.5s ease;
+}
+
+/*profile*/
+
+/* Profile Section Layout */
+#profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  min-height: 500px;
+  transition: all 0.3s ease;
+}
+
+#profile-section h4 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.profile-box h2 {
+  font-size: 22px;
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+/* Profile Card Design */
+.profile-card {
+  text-align: center;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #1a73e8;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  font-size: 22px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.role {
+  font-size: 14px;
+  color: #1a73e8;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 14px;
+  color: #444;
+  margin: 8px 0;
+}
+
+.profile-info span {
+  font-weight: bold;
+}
+
+.dashboard-section.hidden { display: none !important; }
+.sidebar { min-height: 100vh; background: #2c3e50; color: #fff; }
+.nav-link.active, .nav-link:hover { background: #3498db; color: #fff !important; }
+</style>
+</head>
+<body>
+
+	<div id="particles-js"></div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Sidebar -->
+			<div class="sidebar">
+				<div class="sidebar-header">
+					<img src="./images/logo.png" alt="Logo" class="logo">
+					<h4>Dashboard</h4>
+				</div>
+				<nav class="nav flex-column">
+					<a class="nav-link active" href="#" onclick="showSection('home', event)"><i class="fas fa-home"></i> Home</a>
+					<a class="nav-link" href="#" onclick="showSection('apply', event)"><i class="fas fa-file-alt"></i> Apply</a>
+					<a class="nav-link" href="#" onclick="showSection('applications', event)"><i class="fas fa-list"></i> My Applications</a>
+					<a class="nav-link" href="#" onclick="showSection('profile', event)"><i class="fas fa-user"></i> Profile</a>
+					<a class="nav-link" href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+				</nav>
+			</div>
+
+			<!-- Main Content -->
+			<div class="main-content">
+				<!-- Home Section -->
+				<div id="home-section" class="dashboard-section">
+					<div class="welcome-banner">
+						<h2>Welcome, <span id="welcome-name">Startup Founder</span> 👋</h2>
+						<p>Track your approval process and manage your startup applications efficiently.</p>
+					</div>
+
+					<div class="stats-cards">
+						<div class="stat-card">
+							<div class="stat-icon">
+								<i class="fas fa-file-alt"></i>
+							</div>
+							<div class="stat-info">
+								<h3>Applications</h3>
+								<h2 id="total-applications">0</h2>
+							</div>
+						</div>
+						<div class="stat-card">
+							<div class="stat-icon">
+								<i class="fas fa-check-circle"></i>
+							</div>
+							<div class="stat-info">
+								<h3>Approved</h3>
+								<h2 id="approved-applications">0</h2>
+							</div>
+						</div>
+						<div class="stat-card">
+							<div class="stat-icon">
+								<i class="fas fa-clock"></i>
+							</div>
+							<div class="stat-info">
+								<h3>Pending</h3>
+								<h2 id="pending-applications">0</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="approval-timeline">
+						<h3>Approval Timeline</h3>
+						<div class="timeline">
+							<div class="timeline-item">
+								<div class="timeline-icon">
+									<i class="fas fa-file-alt"></i>
+								</div>
+								<div class="timeline-content">
+									<h5>Application Submitted</h5>
+									<span class="badge bg-success">Completed</span>
+								</div>
+							</div>
+							<div class="timeline-item">
+								<div class="timeline-icon">
+									<i class="fas fa-search"></i>
+								</div>
+								<div class="timeline-content">
+									<h5>Under Review</h5>
+									<span class="badge bg-warning">In Progress</span>
+								</div>
+							</div>
+							<div class="timeline-item">
+								<div class="timeline-icon">
+									<i class="fas fa-check-circle"></i>
+								</div>
+								<div class="timeline-content">
+									<h5>Final Approval</h5>
+									<span class="badge bg-secondary">Pending</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Apply Section -->
+				<div id="apply-section" class="dashboard-section hidden">
+					<div class="application-form">
+						<h2>New Application</h2>
+						<form id="startup-application-form">
+							<div class="mb-3">
+								<label class="form-label">Startup Name</label>
+								<input type="text" class="form-control" name="startupName" required>
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Description</label>
+								<textarea class="form-control" name="description" rows="3" required></textarea>
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Category</label>
+								<select class="form-select" name="category" required>
+									<option value="">Select Category</option>
+									<option value="tech">Technology</option>
+									<option value="health">Healthcare</option>
+									<option value="finance">Finance</option>
+									<option value="education">Education</option>
+								</select>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit Application</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- Applications Section -->
+				<div id="applications-section" class="dashboard-section hidden">
+					<div class="applications-table">
+						<h2>My Applications</h2>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Application ID</th>
+										<th>Startup Name</th>
+										<th>Category</th>
+										<th>Status</th>
+										<th>Submitted Date</th>
+										<th>Actions</th>
+									</tr>
+								</thead>
+								<tbody id="applications-table-body">
+									<!-- Applications will be loaded here -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div id="profile-section" class="dashboard-section hidden">
+					<div class="profile-container">
+						<div class="profile-card">
+							<div class="profile-header">
+								<img src="https://th.bing.com/th/id/OIP.Gfp0lwE6h7139625a-r3aAHaHa?w=198&h=198&c=7&r=0&o=7&pid=1.7&rm=3" alt="Profile" class="profile-image" id="profile-img" onerror="this.onerror=null;this.src='https://th.bing.com/th/id/OIP.Gfp0lwE6h7139625a-r3aAHaHa?w=198&h=198&c=7&r=0&o=7&pid=1.7&rm=3'">
+								<h3 id="profile-name">John Doe</h3>
+								<span class="role">Startup Founder</span>
+							</div>
+							<div class="profile-info">
+								<div class="info-item">
+									<i class="fas fa-envelope"></i>
+									<span>Email:</span>
+									<span id="profile-email">john@example.com</span>
+								</div>
+								<div class="info-item">
+									<i class="fas fa-phone"></i>
+									<span>Phone:</span>
+									<span id="profile-phone">+1234567890</span>
+								</div>
+								<div class="info-item">
+									<i class="fas fa-map-marker-alt"></i>
+									<span>Location:</span>
+									<span id="profile-location">New York, USA</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="./javascript/user-dashboard2.js"></script>
+	<script>
+		function showSection(section, event) {
+			if (event) event.preventDefault();
+			document.querySelectorAll('.dashboard-section').forEach(s => s.classList.add('hidden'));
+			document.getElementById(section + '-section').classList.remove('hidden');
+			document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+			if (event && event.currentTarget) event.currentTarget.classList.add('active');
+			if (section === 'profile') {
+				// Optionally update profile data here
+			}
+		}
+		function logout() {
+			// Your logout logic here
+			alert('Logged out!');
+		}
+	</script>
+
+</body>
+</html>

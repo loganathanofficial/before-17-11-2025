@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;ManyToOne_or_OneToMany_bi&apos;&#x0D;&#x0A;- Original project: &apos;ManyToOne_or_OneToMany_bi&apos;&#x0D;&#x0A;- Original element: &apos;ManyToOne_or_OneToMany_bi/src/main/java/com.logu.jpa_configuration&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.logu.jpa_configuration" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.logu" element3="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1741193566401" subPackages="false" version="1.0"/>
+</session>

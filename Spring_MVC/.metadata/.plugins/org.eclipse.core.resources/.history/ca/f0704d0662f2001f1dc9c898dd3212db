@@ -1,0 +1,15 @@
+package com.ogu;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class EmpController {
+	@GetMapping("/EmpData")
+	public String EmpInfo(Model model) {
+		model.addAttribute("time","7.30 AM");
+		return "EmpInformations.jsp";
+		
+	}
+}

@@ -1,0 +1,9 @@
+package com.logu;
+
+public class Triangle implements Shape{
+	@Override
+	public void said() {
+		System.out.println("3 saidsS");
+	}
+
+}

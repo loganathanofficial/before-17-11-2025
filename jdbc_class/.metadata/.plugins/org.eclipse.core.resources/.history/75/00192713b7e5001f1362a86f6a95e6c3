@@ -1,0 +1,52 @@
+package com.logu.insert_proj;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Insert_Operation {
+	static{
+		main(null);
+		
+	}
+	public static void main(String[] args) {
+		Connection con=null;
+		Statement stmt=null;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("driver is loader succesfully");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/btm?user=root&password=admin");
+			System.out.println("connection sucseed");
+			stmt=con.createStatement();
+			System.out.println("statemente has been created!!!");
+			stmt.execute("insert into student values(8,'logu',90.91)");
+			System.out.println("one recored has been inserted succesfully!!!");
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			if(stmt!=null) {
+				try {
+					stmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}else {
+//				System.out.println(" your program has been ");
+			}
+			
+			if(con!=null) {
+				try {
+					stmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+
+	
+	}
+}

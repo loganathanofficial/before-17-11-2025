@@ -1,0 +1,60 @@
+package com.logu.insert_proj;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Update_Operation {
+	static{
+		Update_Operation up=new Update_Operation();
+		up.updateOperation();
+	}
+	public void updateOperation() {
+		Connection con=null;
+		Statement stmt=null;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/btm?user=root&password=admin");
+			stmt=con.createStatement();
+			boolean rs=false;
+			
+			
+			try {
+				System.out.println(stmt.execute("update student set name='loooo' where id=1"););
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			if(rs) {
+				System.out.println("your data has been inserted succesfully!!!");
+				
+			}else {
+				System.err.println("you dont have maching data so cant update!!!");
+			}
+		} catch (ClassNotFoundException | SQLException e ) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			if(stmt!=null) {
+				try {
+					stmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			if(con!=null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+	
+}

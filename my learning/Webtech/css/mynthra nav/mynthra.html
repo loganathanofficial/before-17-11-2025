@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        section nav{
+            margin-top: 10px;
+            height: 12vh;
+            width: 98%;
+            border-radius: 5px;
+            /* border: 5px solid black; */
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 3px 10px black;
+         
+        }
+        #logo{
+            height: 90%;
+            width: 8%;  
+            /* border: 10px solid red; */
+        }
+        #logo img{
+            height: 100%;
+            width: 90%;
+            /* border: 5px solid green; */
+        }
+
+        #navliste ul{
+            margin-left: 20px;
+            height: inherit;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        nav div ul li{
+            font-size: 14px;
+            font-weight: 600;
+            list-style-type: none;
+            font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        }
+        nav div ul li:hover{
+            font-size: 16px;
+            font-weight: 577;
+            color: rgb(122, 136, 136);
+            list-style-type: none;
+            font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        }
+        nav div ul li img{
+            height: 30px;
+            width: 30px;
+
+
+        }
+        #search{
+            height: 50px;
+            width: 35%;
+            margin-left: 20px;
+            /* border: 10px solid blue; */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 5px black;
+
+        }
+        #search:hover{
+            height: 50px;
+            width: 35%;
+            margin-left: 20px;
+            /* border: 10px solid blue; */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 1px 10px rgb(73, 135, 206);
+
+        }
+        #search input{
+            height: inherit;
+            width: 100%;
+            border-radius: 10px;
+         
+            /* background-color: aqua; */
+        }
+        #search img{
+            height: inherit;
+            width: 14%;
+            border-radius: 10px;
+        }
+        /*  */
+
+        #icons{
+            height: inherit;
+            width:18.7%;
+            /* border: 10px solid green; */
+            display: flex;
+            align-items: center;
+          
+        }
+        
+        #icons ul{
+            /* border: 5px solid black; */
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* gap: 100px; */
+        }
+        #icons ul:hover{
+            /* border: 5px solid black; */
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #icons ul li:hover{
+            height: 10%;
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border:15px solid black ;
+            box-shadow: 0px 0px 5px black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <div id="logo"><img src="./image/logo.jpeg" alt=""></div>
+            <div id="navliste">
+                <ul>
+                    <li>MEN</li>
+                    <li>WOMEN</li>
+                    <li>KIDS</li>
+                    <li>LIVING</li>
+                    <li>BEAUTY</li>
+                    <li>STUDIO<SUP>NEW</SUP></li>
+                </ul>
+            </div>
+            <div id="search">
+                <img src="./icons/search.png" alt="">
+                <input type="search" name="" id="" placeholder="Search for products,brands and more">
+            </div>
+            <div id="icons">
+                <ul>
+                    <li><img src="./icons/user.png" alt=""></li>
+                    <li><img src="./icons/heart.png" alt=""></li>
+                    <li><img src="./icons/shopping-bag.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+</body>
+</html>

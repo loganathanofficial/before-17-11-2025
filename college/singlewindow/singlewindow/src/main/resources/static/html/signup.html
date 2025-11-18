@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    <div class="glassmorphism">
+        <h1>Sign Up</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" required>
+                    <option value="" disabled selected>Select Your Role</option>
+                    <option value="ENTREPRENEUR">Entrepreneur</option>
+                    <option value="GOVERNMENT_OFFICIAL">Government Official</option>
+                    <option value="ADMIN">Admin</option>
+                </select>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="./javascript/signup.js"></script>
+</body>
+</html>

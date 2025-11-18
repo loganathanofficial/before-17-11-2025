@@ -1,0 +1,11 @@
+package login;
+import chat.question1;
+public class MainClass{
+	public static void main(String args[]){
+		question1 Chat=new question1();
+		chat.Chat();
+	}
+
+
+
+}

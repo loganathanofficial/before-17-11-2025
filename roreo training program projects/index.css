@@ -1,0 +1,33 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    border: 2px solid #ddd;
+    padding: 8px;
+    font-size: 16px;
+    text-shadow: #3498db;
+    font-weight: bold;
+     background-color: #f0eaea;
+}
+td:hover{
+    background-color: #ffa5ae;
+    color: #000;
+}
+th {
+    background-color: #fdc5c5;
+    text-align: left;
+}
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}

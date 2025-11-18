@@ -1,0 +1,8 @@
+package com.logu;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public interface person {
+	@Autowired
+	Mobile mobile;
+}

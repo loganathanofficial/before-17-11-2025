@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        section{
+            height: 75vh;
+            width: 70vw;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid white;
+            border-radius: 50%;
+            animation: mic 3s linear infinite alternate ;
+        }
+        /* @keyframes mic{
+            0%{
+                transform: translate(100px,100px);
+            }
+        } */
+        .box:first-child{
+            background-color: rebeccapurple;
+            animation-delay: 0.3s;
+        }
+        .box:nth-child(2){
+            background-color: rgb(228, 214, 26);
+            animation-delay: 0.7s;
+        }
+        .box:nth-child(3){
+            background-color: rgb(23, 42, 216);
+            animation-delay: 1s;
+        }
+        .box:nth-child(4){
+            background-color: rgb(182, 230, 70);
+            animation-delay: 1.6s;
+        }
+        .box:last-child{
+            background-color: rgb(43, 228, 26);
+            animation-delay: 2.3s;
+        }
+        @keyframes mic{
+            0%{
+                transform: translate(0px -100px);
+            }
+            100%{
+                transform: translate(0px  0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+</body>
+</html>

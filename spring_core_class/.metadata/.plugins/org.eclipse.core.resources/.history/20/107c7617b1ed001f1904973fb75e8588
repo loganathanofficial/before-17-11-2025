@@ -1,0 +1,10 @@
+package com.logu;
+
+public class realme implements Mobile {
+	
+	@Override
+	public void call() {
+		System.out.println("realme is calling");
+	}
+
+}

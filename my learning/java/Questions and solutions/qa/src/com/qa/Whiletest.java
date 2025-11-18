@@ -1,0 +1,24 @@
+package com.qa;
+
+public class Whiletest {
+	
+	public static void main(String[] args) {
+		one o=new two();
+		if(o instanceof one) {
+			System.out.println("true");
+		}
+		
+	}
+}
+
+class one {
+	int one=1;
+	 {
+		System.out.println("one");
+	}
+	
+}
+
+class two extends one {
+	int two=2;
+}

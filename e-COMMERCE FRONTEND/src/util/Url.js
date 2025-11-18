@@ -1,0 +1,1 @@
+export const BASE_API_URL="https://e-commercedashboard-backend.onrender.com/api"

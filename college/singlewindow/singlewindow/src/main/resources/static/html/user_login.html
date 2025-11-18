@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login - Single Window Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/user_style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form id="signInForm" method="post" onsubmit="return false;">
+                <h1>Welcome Back</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <span>Sign in with your account</span>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input name="email" type="email" placeholder="Email" required />
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input name="password" type="password" placeholder="Password" required />
+                </div>
+                <button type="button" id="forgotPasswordBtn" class="forgot-btn">Forgot Password?</button>
+                <button type="submit" class="submit-btn">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <button class="officer_btn" onclick="location.href='./Officer_Login.html'">
+                        <i class="fas fa-user-shield"></i> Officer Login
+                    </button>
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                    <button class="ghost" id="signUp" onclick="location.href='./signup.html'">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reset Password</h2>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="forgotEmail" placeholder="Enter your email" />
+            </div>
+            <button id="sendOtp" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Send OTP
+            </button>
+
+            <div id="otpSection" class="hidden">
+                <div class="input-group">
+                    <i class="fas fa-key"></i>
+                    <input type="text" id="otpInput" placeholder="Enter OTP" />
+                </div>
+                <button id="verifyOtp" class="submit-btn">
+                    <i class="fas fa-check"></i> Verify OTP
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./javascript/user_login.js"></script>
+</body>
+</html>

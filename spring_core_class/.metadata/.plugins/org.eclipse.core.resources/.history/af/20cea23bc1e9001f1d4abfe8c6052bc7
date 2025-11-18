@@ -1,0 +1,9 @@
+package com.logu;
+
+public class Person {
+	private Mobile mobile;
+	public void use() {
+		System.out.println("persong is using mobile ");
+		mobile.toString();
+	}
+}

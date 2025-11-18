@@ -1,0 +1,10 @@
+package com.logu;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class driver {
+	ApplicationContext context= new AnnotationConfigApplicationContext("myconfig.class");
+	pasenger p=context.getBean("pasenger",pasenger.class);
+	p.travel();
+}
